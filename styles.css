@@ -1,0 +1,273 @@
+:root{
+    --add-color: rgb(252, 242, 242);
+    --main-color:#FAC0BC;
+    --yellow-color:rgb(255, 251, 251);
+    --button-color:#BE1E2D;
+}
+
+
+body
+{
+    font-weight:bold;
+    font-style: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin:0;
+    padding-bottom: 5em;
+    background-color: var(--main-color)!important; 
+}
+
+#header-logo{
+    width:auto;
+    align-self: flex-start;
+}
+#logo
+{
+    
+    height: 5em;
+    margin-top: .2em;
+}
+
+
+header{
+    background-color: var(--add-color);
+    padding-block: .5em;
+    position: sticky;
+    top:0;
+    padding-inline: 10em;
+    height: 5em;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    z-index: 2;
+}
+
+header a{
+    color:black;
+    text-decoration: none;
+}
+
+#networks{
+    align-self: center;
+    display: flex;
+    gap:1em;
+    width:auto;
+    justify-content: space-between;
+}
+
+#header-city{
+    font-size: 1.7em;
+}
+
+#facebook-img, #whatsapp-img {
+    height: 2.5em;
+    width: 2.5em;
+    transition: transform 0.3s ease; 
+}
+
+#facebook:hover #facebook-img,#whatsapp:hover #whatsapp-img  {
+    transform: scale(1.2); 
+}
+
+#phone-number{
+    align-self: center;
+    font-size: 1.5em;
+}
+.dropdown-menu
+{
+      width: auto !important;
+    --bs-dropdown-min-width: 0 !important;
+    --bs-dropdown-link-active-color: black !important;
+    --bs-dropdown-link-active-bg:var(--button-color) !important;
+}
+
+.dropdown button{
+    background-color: var(--button-color) !important;
+    border-color: black !important;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div{
+    justify-self:flex-end
+}
+main img{
+    width: 100%;
+}
+#cutie
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 4em;
+    width: 100%;
+    height: 900px;
+    background-image: url(images/main2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 0px -44px 37px -25px rgba(255,255,255,0.75) inset;
+    -webkit-box-shadow: 0px -44px 37px -25px rgba(255,255,255,0.75) inset;
+    -moz-box-shadow: 0px -44px 37px -25px rgba(255,255,255,0.75) inset;
+}
+
+#cutie p{
+    text-align: center;
+    color:white;
+    font-size: 5em;
+    font-weight: bolder;
+    line-height: 1.1;
+    text-shadow: 1px 5px 0px rgba(0,0,0,0.67);
+}
+
+
+
+
+#main-text{
+    margin-top: 2em;
+    width: 86%;
+    font-weight: bold;
+    margin: 2 auto;
+}
+
+#main-text p{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#main-text h1{
+    margin-top: 4em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#guarantees{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.one-guarantee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1em;
+    width: 90%;
+    padding: .5em;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+.one-guarantee-text{
+    text-align: center;
+    width: 80%;
+}
+
+.plus{
+    width: 1em;
+    margin-right: .5em;
+}
+
+.plus img{
+    width: 100%;
+}
+
+.carousel{
+    z-index: 1;
+}
+
+
+.carousel-item {
+    width: 100%;
+    height: 35em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.carousel-control-prev {
+    left: 200px !important;
+}
+
+.carousel-control-next {
+    right: 200px !important;
+}
+
+.carousel-indicators{
+    flex-direction: column;
+}
+
+#carouselExampleInterval{
+    margin-bottom: 10em !important;
+}
+
+
+#facebook-src
+{
+    background-color: var(--add-color);
+    box-shadow: 10px 15px 0px rgba(0,0,0,0.5);
+    border-radius: 1em;
+    padding-inline: 3em;
+    padding-block: 1em;
+    margin: 5em auto;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+#facebook-src img{
+    border-radius: 50%;
+    height: 28em; 
+    width: auto;
+    margin-right: 2em;
+}
+
+#cat-card img{
+    border: .3em solid var(--button-color);
+}
+
+#facebook-src p{
+    display: block;
+    width: 10em;
+    font-size: 2.5em;
+    margin-left: 1.5em;
+}
+
+#facebook-text-and-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+#facebook-src-logo {
+    align-self: center;
+    width: 5em;
+}
+
+
+#facebook-text-and-logo a{
+    text-decoration: none;
+}
+
+
+
+
+
+
