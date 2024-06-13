@@ -165,6 +165,26 @@
         width: 250px !important;
         height: 350px !important;
     }
+    #facebook-src
+    {
+        display: block !important;
+    }
+    #facebook-text-and-logo
+    {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;   
+        margin: 0 auto !important;    
+        padding: 0 !important;
+        margin-top: 1em !important;
+    }
+    #facebook-text-and-logo p
+    {
+        justify-content: center !important;
+        align-items: center !important;   
+        margin: 0 auto !important;    
+        padding: 0 !important;
+    }
 }
 
 @media (max-width:700px){
@@ -183,6 +203,7 @@
         width: 200px !important;
         height: 300px !important;
     }
+  
 }
 @media (max-width:600px){
     #phone-number,#header-city{
@@ -202,7 +223,40 @@
         width: 150px !important;
         height: 250px !important;
     }
+    body{
+        font-size: 70% !important;
+    }
+    header{
+        flex-direction: column ;
+        font-size: 14px !important;
+        height: auto  !important;
+    }
+    #networks
+    {
+       margin-bottom: 1em;
+    }
+    
+#city-lang
+{
+    display: flex;
+    justify-content: space-between;
+    width: 70% !important
 }
+.plus img
+{
+    width: 30px !important;
+}
+#facebook-text-and-logo p
+{
+    justify-content: center !important;
+    align-items: center !important;   
+    margin: 0 auto !important;    
+    padding: 0 !important;
+    font-size: 20px !important;
+}
+}
+
+
 
 
 
@@ -344,7 +398,12 @@ main img{
 }
 
 
-
+#city-lang
+{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
 
 #main-text{
     margin-top: 2em;
@@ -387,16 +446,12 @@ main img{
 
 
 .plus{
-    width: 1em;
+    width: 40px;
     margin-right: .5em;
-    position: absolute;
-    left: 7em;
 }
 
 .plus img{
-    width: 100%;
-    
-    
+    width: 40px;
 }
 
 
