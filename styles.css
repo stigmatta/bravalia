@@ -1,3 +1,213 @@
+@media (max-width:2200px){
+    .thumbnail{
+        width: 800px !important;
+        height: 1000px !important
+    }
+}
+
+@media (max-width:1970px){
+    .thumbnail{
+        width: 600px !important;
+        height: 900px !important
+    }
+}
+
+@media (max-width:1650px){
+    #main-text p,#main-text h1{
+        font-size: 3em !important;
+    }
+
+    img #logo{
+        width: 5em !important;
+    }
+
+    #phone-number,#header-city{
+        font-size: 2em !important;
+    }
+    .dropdown button{
+        width: 5em !important;
+    }
+
+    header{
+        padding-inline: 5em !important;
+    }
+
+}
+
+@media (max-width:1500px){
+    .thumbnail{
+        width: 500px !important;
+        height: 600px !important;
+    }
+} 
+
+@media (max-width:1400px){
+    #cutie{
+        height: 1000px !important;
+    }
+
+    #facebook-src p{
+        font-size: 3em !important;
+    }
+}
+
+@media (max-width:1300px){
+    #facebook-src p{
+        font-size: 2em !important;
+    }
+
+    .thumbnail{
+        width: 400px !important;
+        height: 500px !important;
+    }
+}
+
+@media (max-width : 1200px){
+
+    #phone-number,#header-city{
+        font-size: 1.6em !important;
+    }
+    .dropdown button{
+        width: 3.5em !important;
+        height: 1.8em !important;
+    }
+
+    header{
+        padding-inline: 4em !important;
+    }
+
+    #cutie p {
+        font-size: 6em !important;
+    }
+}
+
+
+@media (max-width:1100px){
+    #cutie{
+        height: 900px !important;
+    }
+}
+
+@media (max-width:1000px){
+    header{
+        padding-inline: 3em !important ;
+    }
+    #facebook-src p{
+        font-size: 1.5em !important;
+    }
+    img#logo{
+        display: none !important;
+    }
+
+    #facebook,#whatsapp,#facebook-img, #whatsapp-img{
+        width: 2.5em !important;
+        height: 2.5em !important;
+    }
+
+    #cutie{
+        height: 800px !important;
+    }
+
+    #cutie p {
+        font-size: 5em !important;
+    }
+
+    .thumbnail{
+        width: 300px !important;
+        height: 400px !important;
+    }
+
+    .dropdown button{
+        width: 3em !important;
+        height: 1.5em !important;
+        font-size: 2em!important;
+    }
+
+    header{
+        padding-inline: 4em !important;
+    }
+
+}
+
+@media (max-width:850px){
+    #cutie{
+        height: 700px !important;
+    }
+
+    img#logo{
+        height: 3em;
+    }
+
+    #phone-number,#header-city{
+        font-size: 1.6em !important;
+    }
+    .dropdown button{
+        width: 2.5em !important;
+        font-size: 1.7em !important;
+    }
+    header{
+        padding-inline: 3em !important; 
+    }
+}
+
+
+@media (max-width:800px){
+   
+    #cutie{
+        height: 600px !important;
+    }
+
+    #cutie p {
+        font-size: 4em !important;
+    }
+
+    .thumbnail{
+        width: 250px !important;
+        height: 350px !important;
+    }
+}
+
+@media (max-width:700px){
+
+    #phone-number,#header-city{
+        font-size: 1.5em !important;
+    }
+    .dropdown button{
+        width: 3.3em !important;
+        font-size: 1.3em !important;
+    }
+    header{
+        padding-inline: 3em !important; 
+    }
+    .thumbnail{
+        width: 200px !important;
+        height: 300px !important;
+    }
+}
+@media (max-width:600px){
+    #phone-number,#header-city{
+        font-size: 1.4em !important;
+    }
+    .dropdown button{
+        width: 3em !important;
+        font-size: 1.5em !important;
+    }
+    .dropdown-toggle::after{
+        display: none !important;
+    }
+}
+
+@media (max-width:500px){
+    .thumbnail{
+        width: 150px !important;
+        height: 250px !important;
+    }
+}
+
+
+
+
+
 :root{
     --add-color: rgb(252, 242, 242);
     --main-color:#FAC0BC;
@@ -23,8 +233,7 @@ body
 }
 #logo
 {
-    
-    height: 5em;
+    height: 7em;
     margin-top: .2em;
 }
 
@@ -39,7 +248,7 @@ header{
     display: flex !important;
     justify-content: space-between;
     align-items: center;
-    width: auto;
+    width: 100%;
     z-index: 2;
 }
 
@@ -56,13 +265,13 @@ header a{
     justify-content: space-between;
 }
 
-#header-city{
-    font-size: 1.7em;
+#header-city,#phone-number{
+    font-size: 2.5em;
 }
 
 #facebook-img, #whatsapp-img {
-    height: 2.5em;
-    width: 2.5em;
+    height: 4em;
+    width: 4em;
     transition: transform 0.3s ease; 
 }
 
@@ -72,7 +281,6 @@ header a{
 
 #phone-number{
     align-self: center;
-    font-size: 1.5em;
 }
 .dropdown-menu
 {
@@ -85,6 +293,14 @@ header a{
 .dropdown button{
     background-color: var(--button-color) !important;
     border-color: black !important;
+    width: 8em;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-item{
+    font-size: 1.3em;
 }
 
 main{
@@ -107,10 +323,11 @@ main img{
     justify-content: flex-end;
     padding-bottom: 4em;
     width: 100%;
-    height: 900px;
+    height: 1200px;
     background-image: url(images/main2.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-position: top center;
 
     box-shadow: 0px -44px 37px -25px rgba(255,255,255,0.75) inset;
     -webkit-box-shadow: 0px -44px 37px -25px rgba(255,255,255,0.75) inset;
@@ -120,7 +337,7 @@ main img{
 #cutie p{
     text-align: center;
     color:white;
-    font-size: 5em;
+    font-size: 7em;
     font-weight: bolder;
     line-height: 1.1;
     text-shadow: 1px 5px 0px rgba(0,0,0,0.67);
@@ -159,75 +376,60 @@ main img{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-block: 1em;
-    width: 90%;
+    width: 80%;
     padding: .5em;
-    font-size: 2em;
     line-height: 1.2em;
+    font-size: 2.7em;
+    width: 90%;
 }
 
-.one-guarantee-text{
-    text-align: center;
-    width: 80%;
-}
 
 .plus{
     width: 1em;
     margin-right: .5em;
+    position: absolute;
+    left: 7em;
 }
 
 .plus img{
     width: 100%;
+    
+    
 }
 
-.carousel{
-    z-index: 1;
+
+.thumbnail {
+    height: 500px;
+    width: 500px;
+    border-radius: .5em;
+    object-fit: cover;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .7);
+    transition: transform 0.4s ease;
+  }
+  .thumbnail:hover {
+    transform: scale(1.07);
 }
-
-
-.carousel-item {
-    width: 100%;
-    height: 35em; 
+  #gallery-container {
+    margin-block: 3vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item img {
-    max-width: 100%; 
-    max-height: 100%; 
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-}
-
-.carousel-control-prev {
-    left: 200px !important;
-}
-
-.carousel-control-next {
-    right: 200px !important;
-}
-
-.carousel-indicators{
-    flex-direction: column;
-}
-
-#carouselExampleInterval{
-    margin-bottom: 10em !important;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 2em;
 }
 
 
-#facebook-src
-{
+#facebook-src {
     background-color: var(--add-color);
-    box-shadow: 10px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 15px 0px rgba(0, 0, 0, 0.5);
     border-radius: 1em;
     padding-inline: 3em;
     padding-block: 1em;
     margin: 5em auto;
     display: flex;
-    width: fit-content;
+    width: 100%; 
+    max-width: 80%; 
     justify-content: center;
     align-items: center;
     height: fit-content;
@@ -235,8 +437,6 @@ main img{
 
 #facebook-src img{
     border-radius: 50%;
-    height: 28em; 
-    width: auto;
     margin-right: 2em;
 }
 
