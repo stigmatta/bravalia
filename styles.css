@@ -23,6 +23,7 @@
 
     #phone-number,#header-city{
         font-size: 2em !important;
+        margin-block: auto !important;
     }
     .dropdown button{
         width: 5em !important;
@@ -85,6 +86,10 @@
 @media (max-width:1100px){
     #cutie{
         height: 900px !important;
+    }
+
+    #logo{
+       height: 5em !important;
     }
 }
 
@@ -204,21 +209,23 @@
         height: 300px !important;
     }
   
+
 }
-@media (max-width:600px){
-    #phone-number,#header-city{
-        font-size: 1.4em !important;
-    }
-    .dropdown button{
-        width: 3em !important;
-        font-size: 1.5em !important;
+
+@media (max-width:630px){
+    #phone-number{
+    
     }
     .dropdown-toggle::after{
         display: none !important;
     }
+
+    header{
+        padding-inline: 2em !important;
+    }
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
     .thumbnail{
         width: 150px !important;
         height: 250px !important;
@@ -321,6 +328,7 @@ header a{
 
 #header-city,#phone-number{
     font-size: 2.5em;
+    height: fit-content;
 }
 
 #facebook-img, #whatsapp-img {
