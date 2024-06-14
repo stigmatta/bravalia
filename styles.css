@@ -434,6 +434,7 @@ main img{
 
 #guarantees{
     display: flex;
+    gap:2em;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -444,7 +445,6 @@ main img{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-block: 1em;
     width: 80%;
     padding: .5em;
     line-height: 1.2em;
